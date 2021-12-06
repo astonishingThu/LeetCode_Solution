@@ -11,7 +11,7 @@ public class HouseRobber {
         // That comes to the recurrence relation: money[i] = Math.max(money[i],money[i-1]+currentVal);
         int n = houses.length;
         if (n==1) return houses[0];
-        int[] money = new int[n+1];
+        int[] money = new int[n];
         money[0] = houses[0];
         money[1] = Math.max(houses[0],houses[1]);
         for (int i=2; i<n; i++) {
