@@ -19,5 +19,18 @@ public class HouseRobber {
         }
         return money[n-1];
     }
+    // More optimized solution. Space Complexity: O(1)
+    public static int rob2(int[] houses) {
+    int n = houses.length;
+        int i_1 = 0;
+        int i_2 = 0;
+        for (int i=0; i<n; i++) {
+            int currVal = Math.max(i_1, i_2+houses[i]);
+            int temp = i_1;
+            i_1 = currVal;
+            i_2 = temp;
+        } 
+        return i_1;
+    }
 }
  
