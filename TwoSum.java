@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class TwoSum {
-    // 1,2,3,5  target = 7
+  
     public static void main(String[] args) {
         int[] nums = {4,1,8,2};
         int target = 10;
