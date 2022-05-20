@@ -24,10 +24,6 @@ class Solution {
                 if (sum==0) {
                     ArrayList<Integer> arrList = new ArrayList<>();
                     list.add(Arrays.asList(nums[i],nums[left],nums[right]));
-                    arrList.add(nums[i]);
-                    arrList.add(nums[left]);
-                    arrList.add(nums[right]);
-                    list.add(arrList);
                     right--;
                     while (nums[right]==nums[right+1] && left<right) right--;
                 } else if (sum>0) {
