@@ -11,8 +11,7 @@ public class ThreeSum {
 }
 class Solution {
     public static List<List<Integer>> threeSum(int[] nums) {
-        // Idea: Loop over the array, group one element with pair of twoSum -> Using the twoSum 
-        // problem approach
+        // Idea: Loop over the array, group one element with a pair of twoSum -> Using the twoSum problem's approach
         Arrays.sort(nums);
         List<List<Integer>> list = new ArrayList<>();
         int n = nums.length;
